@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # === CONFIG === #
-userAccount='misp'
-apacheAccount='www-data'
+user1='misp'
+user2='www-data'
 filePath='/var/www/MISP'
 
 # === COLORS === #
@@ -21,10 +21,10 @@ function displayOwner ()
 
 function checkOwnerLogic ()
 {
-    if [[ "$ownerVar" != "$apacheAccount" ]]; then
-        newOwner="$apacheAccount"
+    if [[ "$ownerVar" != "$user2" ]]; then
+        newOwner="$user2"
     else
-        newOwner="$userAccount"
+        newOwner="$user1"
     fi
     sudo chown -R "$newOwner:$newOwner" "$filePath"
 
