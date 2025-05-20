@@ -13,7 +13,7 @@ RESET="\e[0m"
 # === Functions === #
 function displayOwner ()
 {
-    ownerVar=$(stat /var/www/MISP/ -c %U)
+    ownerVar=$(stat $filePath -c %U)
     echo "--------------------------------"
     echo -e "Owner: ${1}$ownerVar${RESET}"
     echo "Path : $filePath"
