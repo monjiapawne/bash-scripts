@@ -1,5 +1,9 @@
 #!/bin/bash
-# gr = gcc run, compiles with gcc and runs locally.
+#####################################################
+# purpose: compile and run c scripts
+# usage: ./gcc-compile-run.sh "cool_script.c"
+#####################################################
+
 file="$1"
 fullpath="$PWD/$file"
 filetype=".c"

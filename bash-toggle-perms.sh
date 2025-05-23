@@ -1,4 +1,10 @@
 #!/bin/bash
+############################################################
+# purpose: toggle permissions to a path and all sub-folders
+# usage: ./bash-toggle-perms.sh
+# adjust variables as required in 'config'
+############################################################
+
 
 # === CONFIG === #
 user1='misp'
