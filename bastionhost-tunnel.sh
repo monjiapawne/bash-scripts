@@ -1,9 +1,9 @@
 #!/bin/bash
 # How to set up Tunnel
 # generate keys on host
-ssh-keygen -t ed25519
+# ssh-keygen -t ed25519
 # copy pub key to pi
-ssh-copy-id sys1@1.2.3.4
+# ssh-copy-id sys1@1.2.3.4
 #===== COLORS =====#
 R="\e[1;31m"
 B="\e[34m"
