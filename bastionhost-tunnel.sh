@@ -13,8 +13,8 @@ C="\e[0m"
 
 #==== Config =====#
 tunpidf="/tmp/tun.pid"
-remote="sys1@10.0.20.99"
-routes="10.0.10.0/24"
+remote="admin@172.16.30.1"
+routes="192.168.44.0/24"
 log="/tmp/bhtun.log"
 
 command -v sshuttle &> /dev/null || {
