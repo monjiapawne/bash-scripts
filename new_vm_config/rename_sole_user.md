@@ -28,14 +28,14 @@ sudo groupmod -n $NEW_USER $OLD_USER
 sudo usermod -c "$NEW_USER" $NEW_USER
 ```
 
-5) Verify all is correct
-```shell
-tail -n 5 /etc/passwd
-ls /home
-```
-
-6) Remove `tmp` user
+5) Remove `tmp` user
 ```shell
 sudo pkill -9 -u tmp
 sudo deluser --remove-home tmp
+```
+
+6) Verify all is correct
+```shell
+tail -n 5 /etc/passwd
+ls /home
 ```
