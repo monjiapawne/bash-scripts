@@ -33,3 +33,8 @@ sudo usermod -c "$NEW_USER" $NEW_USER
 tail -n 5 /etc/passwd
 ls /home
 ```
+
+6) Remove `tmp` user
+```shell
+sudo deluser --remove-home tmp
+```
