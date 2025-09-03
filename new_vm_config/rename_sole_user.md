@@ -36,5 +36,6 @@ ls /home
 
 6) Remove `tmp` user
 ```shell
+sudo pkill -9 -u tmp
 sudo deluser --remove-home tmp
 ```
